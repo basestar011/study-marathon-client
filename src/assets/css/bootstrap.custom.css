@@ -1,0 +1,46 @@
+
+
+@import "../../../node_modules/bootstrap/dist/css/bootstrap.css";
+@import "../../../node_modules/bootstrap-vue-3/dist/bootstrap-vue-3.css";
+
+@media (min-width: 360px) {
+  .container-sm, .container {
+    max-width: 360px;
+  }
+}
+
+@media (min-width: 576px) {
+  .container-sm, .container {
+    max-width: 360px;
+  }
+}
+@media (min-width: 768px) {
+  .container-md, .container-sm, .container {
+    max-width: 360px;
+  }
+}
+@media (min-width: 992px) {
+  .container-lg, .container-md, .container-sm, .container {
+    max-width: 360px;
+  }
+}
+@media (min-width: 1200px) {
+  .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 360px;
+  }
+}
+@media (min-width: 1400px) {
+  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 360px;
+  }
+}
+
+.bg-primary {
+  --bs-bg-opacity: 1;
+  background-color: #6610f2 !important;
+}
+
+.text-primary {
+  --bs-text-opacity: 1;
+  color: #6610f2 !important;
+}
