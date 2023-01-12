@@ -10,8 +10,21 @@ const router = createRouter({
     },
     {
       path: '/register',
-      meta: { layout: 'guest', title: '가입하기' },
-      component: () => import('../views/RegisterPage.vue'),
+      meta: { layout: 'guest' },
+      component: () => import('../views/register/index.vue'),
+      redirect: { path: '/register/main' },
+      children: [
+        {
+          path: 'main',
+          meta: { title: '가입하기' },
+          component: () => import('../views/register/RegisterMainPage.vue'),
+        },
+        {
+          path: 'form',
+          meta: { title: '회원가입' },
+          component: () => import('../views/register/RegisterFormPage.vue'),
+        },
+      ],
     },
     {
       path: '/login',
@@ -19,8 +32,13 @@ const router = createRouter({
       component: () => import('../views/LoginPage.vue'),
     },
     {
+      path: '/find-password',
+      meta: { layout: 'guest', title: '비밀번호 찾기' },
+      component: () => import('../views/FindPasswordPage.vue'),
+    },
+    {
       path: '/main',
-      meta: { layout: 'member', title: '메인 페이지' },
+      meta: { requireAuth: true, layout: 'member', title: '메인 페이지' },
       component: () => import('../views/MainPage.vue'),
     },
   ],

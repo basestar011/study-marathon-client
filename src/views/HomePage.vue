@@ -11,7 +11,7 @@
 
 <template>
   <div class="w-100" style="height: 70% !important">
-    <img src="../assets/images/main.svg" class="w-100" alt="" />
+    <img src="@/assets/images/main.svg" class="w-100" alt="" />
     <p v-if="route.path === '/'" class="text-center">
       <strong>26's</strong>
     </p>

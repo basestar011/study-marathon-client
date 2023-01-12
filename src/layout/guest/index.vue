@@ -19,7 +19,7 @@
           <div class="container h-100 px-0">
             <div class="row w-100 gx-0" style="height: 20% !important">
               <div v-if="route.meta.title" class="col h-100">
-                <div class="w-100 pt-2 ps-2 fs-5" style="height: 5rem">
+                <div class="w-100 pt-2 ps-3 fs-5" style="height: 5rem">
                   <span class="fw-bold">26'S</span>
                   <span class="text-primary fw-semibold d-block">
                     {{ route.meta.title }}

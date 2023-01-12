@@ -1,6 +1,6 @@
 <script>
   export default {
-    name: 'SideBar',
+    name: 'MemberSideBar',
   };
 </script>
 
